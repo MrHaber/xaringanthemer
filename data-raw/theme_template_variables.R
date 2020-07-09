@@ -71,14 +71,15 @@ set_default <- function(tv, ..., set_var = "default") {
 }
 
 template_variables$css_property <- NA_character_
-mdn_font_size <- "[font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)"
-mdn_font_weight <- "[font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)"
-mdn_background_size <- "[background-size](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)"
-mdn_background_position <- "[background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)"
-mdn_padding <- "[padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)"
+
 
 template_variables <- set_default(
   template_variables,
+  mdn_font_size <- "[font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)"
+  mdn_font_weight <- "[font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)"
+  mdn_background_size <- "[background-size](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)"
+  mdn_background_position <- "[background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)"
+  mdn_padding <- "[padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)"
   set_var = "css_property",
   padding = mdn_padding,
   background_size = mdn_background_size,
